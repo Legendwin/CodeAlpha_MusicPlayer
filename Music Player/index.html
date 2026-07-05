@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Cover Images -->
+            <div class="cover">
+                <img id="cover-img" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=300" alt="album-art" id="cover">
+            </div>
+
+            <!-- Song Details -->
+            <div class="details">
+                <h2 id="title">Song Title</h2>
+                <h3 id="artist">Artist Name</h3>
+            </div>
+
+            <audio id="audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+            <!-- Song Progress -->
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+
+            <!-- Song Time -->
+            <div class="time-container">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+
+            <!-- Player Controls -->
+            <div class="controls">
+                <button id="prev">◀◀</button>
+                <button id="play" class="main-btn">▶</button>
+                <button id="next">▶▶</button>
+            </div>
+
+            <!-- Volume Control -->
+            <div class="volume-container">
+                <span id="volume-icon">🔊</span>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="1">
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist-container">
+                <h3>Queue</h3>
+                <ul id="playlist"></ul>
+            </div>
+        </div>        
+
+        <script src="./script.js"></script>
+    </body>
+</html>
